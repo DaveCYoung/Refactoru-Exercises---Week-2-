@@ -1,0 +1,97 @@
+NOTES:
+
+In english we have sentences.  Each word has a type - noun, verb, adverb etc.
+In Javascript, type (and grammar) matters.
+Javascript is written in statements, compost (mostly) of values and each value has a type (number, string, etc)
+
+Among types primitive types and non-primitive types.  
+
+Operator - lets you combine values to produce a new value ex 5+7.  +, -. *, /, % (remainder),   <-   binary (accept two values) operators 
+
+fizzbuzz - ?!
+
+Primitive types: string, number, boolean, null, undefined 
+	Numers
+		Number literals - literal representation of that type - simplest way to represent that value.  ex. 42.  
+
+	Variable 
+		A name that refers to a value
+		More like a sign post that points to a value than a box that holds values...
+	
+	String - sequence of characters.  strings 'zero indexed' ie first character is indexed as 0
+	string operators - concatenation, not addition.
+
+	property - some values have other values attached to them.  ex string length s
+
+dot notation - more convenient, easier to read. 
+    
+and $ are ok.  
+valid ex.:  foo, bar2, __things (useful when alphabetizing), $bills. most angular variables start with $.  
+
+boolean operators = true/false, 0/1, on or off.  
+  	  boolean literals = true or false
+
+not operator: '!'
+greater than operator: > 
+less than operator: < 
+less than or equal to: <=
+greater than or equal to: >=
+equal to: ===
+and: &&
+or: ||
+
+equality ie it will coerce values.  10==='10' is FALSE.  10=='10' is TRUE.
+
+ALWAYS USE STRICT EQUALITY. 
+
+* Booleans can be used to sort alphabetically ie 'a'<'b' = TRUE
+
+* null == undefined is TRUE, null === undefined is FALSE
+
+INDENTATION CONVENTION - use either 2 or 4 spaces.  indentation is KEY.
+
+Javascript statements end with semicolons, BUT javascript uses ASI - automatic semicolon insertion 
+
+Non-primitive types: arrays, 
+
+Array - list of other values.
+	arrays do have a simple notation: var myArray = [x, y, z]
+
+stack: FILO
+queue: FIFO
+
+++ -> incriment by 1 
+-- -> decriment by 1
+
++= 3 incriment by 3, reassign to that value
+*= multiply by three, reassign to that value
+
+for loops:
+
+for loop declaration describes how to loop over the array, what we're looping over, etc. 
+
+loop initializer - runs ONCE at beginning of for loop.  it is a start point.  
+
+for loop body describes what to do on each iteration.  
+
+
+object: list of key value pairs ie. movieGenre : 'Comedy',
+ keys ALWAYS have to be strings, do NOT need quotation marks.  needs comma after every line.  need quotation marks with any non alphabetic characters.  ie. "movie-genre"
+
+arrays have numbered indicies to store ordered values
+
+objects have named indexes to store unordered values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
