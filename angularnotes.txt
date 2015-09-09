@@ -1,0 +1,29 @@
+What is Angular?
+
+A strongly opinionated, MVC, framework
+
+Set of code that someone else wrote (in javascript)
+
+More than library, has broader functionality.
+
+Framework: code that someone else has written that you can use in your project.  it's bigger than a library.  It's intended to be an all in one solution.  One stop shop for front end needs. 
+
+MVC  - Model View Controller: Pattern for designing graphical applications of all types (not just web dev).  
+
+Three parts: 
+
+	Model - Raw data. Javascript objects, server data, API, etc.  Can come from several sources.  Also includes state of application.  Editing, not editing, active, inactive, etc.    
+	
+	View - Visual representation of your model.  
+	
+	Controller - What connects model (data) to view (visual representation) Can be impacted by user.  Glue that connects view/model.  
+
+Imperative Programming: Program performs list of actions or series of actions.  Angular makes imperative programming very difficult.  
+
+Declarative Programming: Not a series of actions.  Declare relationships between different pieces of code.  Declare between model, view.  
+
+Dependencies - code the app or bit of code is dependent on.  variables from other pieces of JS that you need in your code.  prevents accidental variable spillover.  
+
+directive === ng-XXXX 
+ng-click defines what to do when element is clicked on.
+

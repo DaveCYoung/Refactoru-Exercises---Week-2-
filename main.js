@@ -159,45 +159,42 @@
 // 	}
 
 
-var myObj = {}
-var topGun = {
-	title: 'Top Gun',
-	genre: 'Historical autobiography',
-	rating: 6.8,
-	year: 1986,
-}
+// var myObj = {}
+// var topGun = {
+// 	title: 'Top Gun',
+// 	genre: 'Historical autobiography',
+// 	rating: 6.8,
+// 	year: 1986,
+// }
 
-for (var key in topGun){   // for loop notation for objects.  iterates over every key.
-	console.log('The '+ key + ' of the movie is '+ topGun[key])  // topGun.title or topGun[title] both access 'Top Gun'
-}
-
-
-
-var which = prompt('Which property do you want to know about?')
-
-console.log(topGun[which])
-
-var meanGirls = {
-	rating: 'fetch',
-	genre: "Inspirational Documentary",
-	year: "he doens't even go here",
-	title: "Mean Girls",
-}
+// for (var key in topGun){   // for loop notation for objects.  iterates over every key.
+// 	console.log('The '+ key + ' of the movie is '+ topGun[key])  // topGun.title or topGun[title] both access 'Top Gun'
+// }
 
 
 
-topGun.rating= 6.9;
+// var which = prompt('Which property do you want to know about?')
 
-console.log(topGun)
+// console.log(topGun[which])
 
-var movies =[]
+// var meanGirls = {
+// 	rating: 'fetch',
+// 	genre: "Inspirational Documentary",
+// 	year: "he doens't even go here",
+// 	title: "Mean Girls",
+// }
 
-movies.push(topGun)
-movies.push(meanGirls)
-
-console.log(movies)
 
 
+// topGun.rating= 6.9;
+
+// console.log(topGun)
+
+// var movies =[]
+
+// movies.push(topGun)
+// movies.push(meanGirls)
+// console.log(movies)
 
 
 

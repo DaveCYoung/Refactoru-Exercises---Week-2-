@@ -1,0 +1,28 @@
+last type - function
+
+set of instructions that takes an input and modifies it to yeild an output
+
+it IS a data type with a literal syntax:
+
+function(){
+	
+}
+
+function must be defines and invoked to do anything.  
+
+to STORE data, use return vs console.log and assign to variable.
+
+can NAME function or name variable tied to ANONYMOUS function.  see js.
+
+NAMED function can be called prior to the definition of the function - "hoisting"
+
+***  Built in methods.  ex push with array 
+
+	Strings - toUpperCase () toLowerCase() split('x')
+	Arrays - join(' ') split()
+
+SCOPE
+
+	environments - where variables exist or don't exist
+
+functions create scope.  

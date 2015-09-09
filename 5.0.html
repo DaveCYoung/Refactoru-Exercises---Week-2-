@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="exModule">
+<head>
+	<title>Edit in place</title>
+	<link rel="stylesheet" type="text/css" href="5.0.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+	<script src="5.0.js" type="text/javascript"></script>
+	
+
+</head>
+<body ng-controller="mainController">
+<div>
+	<p class= "div" ng-show = "paragraph1show" ng-click = "paragraph1click()"> {{paragraph1}} </p>
+	<textarea  class = "div" ng-model="paragraph1" ng-click = "input1click()" ng-show = "input1show" type="text" placeholder="{{paragraph1}}"></textarea>
+
+	<p class ="div" ng-show = "paragraph2show" ng-click = "paragraph2click()" > {{paragraph2}} </p>
+	<textarea  class = "div" ng-model="paragraph2" ng-click = "input2click()" ng-show = "input2show" type="text"></textarea>
+
+	<p class="div" ng-show = "paragraph3show" ng-click =  "paragraph3click()"> {{paragraph3}} </p>
+	<textarea  class = "div" ng-model="paragraph3" ng-click = "input3click()" ng-show = "input3show" type="text" placeholder="{{paragraph3}}"></textarea>
+
+</div>
+
+</body>
+</html>	

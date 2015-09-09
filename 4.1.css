@@ -1,0 +1,13 @@
+.mousedover {
+	background-color: pink;
+	}
+
+.popup{
+	position: fixed;
+	background-color: gray;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/*margin: 30px;*/
+}
