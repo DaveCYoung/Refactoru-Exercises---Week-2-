@@ -47,7 +47,6 @@ angular.module('exModule')
 			$scope.clickcounter = 0}
 		}
 
-
 		$scope.input1click = function(event){
 			$scope.clickcounter++
 			if($scope.clickcounter === 2){
