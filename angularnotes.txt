@@ -27,3 +27,22 @@ Dependencies - code the app or bit of code is dependent on.  variables from othe
 directive === ng-XXXX 
 ng-click defines what to do when element is clicked on.
 
+ng-class - specifies class based on specified variable string
+		 - may also use with boolean value.  if that value is true, class is applied to that element. for ng-class as boolean:  ng-class="{big : important}"  how this reads - if IMPORTANT is TRUE, appy BIG.   
+
+random - input type in html = range 
+
+ng-show: dynamically hide or reveal element based on boolean
+
+< img ng-src = "{{sourcevariable}}">
+
+event handling 
+event.prevent default()
+
+ng-keypress= namedfunction()
+ng-submit - automatically prevents default behaviors 
+
+keydown - moment any key goes down
+keyup - moment any key comes up
+keypress - triggers any time a typing event would produce a charcter
+

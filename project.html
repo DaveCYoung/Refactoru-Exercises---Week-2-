@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="exModule">
+<head>
+	<title> The Running Estimate </form></title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
+	<script src="project.js" type="text/javascript"></script>
+	
+
+</head>
+<body ng-controller="mainController">
+
+
+
+<div class = "header firstheader">
+	<h1 class = "title">The Running Estimate</h1>
+</div>
+
+<div class = "holderouter">
+	<div class = "holderinner">
+		<div class = "repeatdiv" ng-repeat = "x in runningestimate" >
+			<div class = "testitemfront" ng-show = "story1front.index" ng-click = "frontclickevent()"> {{x.title}} </div>
+			<div class = "testitemback" ng-show = "story1back.index" ng-click = "backclickevent()"> {{x.preview}} </div>
+			<div class = "insidefull" ng-show = "story1full" ng-click = "fullclickevent()"> {{x.content}}</div>
+		</div>
+	</div>
+</div>
+
+<!-- <div class = "menu">
+</div>
+<div class = "holderouter">
+<div class = "holderinner">
+	<div class = "testitemfront" ng-show = "story1front" ng-click = "frontclickevent()"> Hungary Drills Army at Border With Serbia as Migrants Enter </div>
+	<div class = "testitemback" ng-show = "story1back" ng-click = "backclickevent()"> The number of migrants in the area has shown no sign of abating, and Hungarian military officials said the army would help secure the border. </div>
+	<div class = "itemfront"> Title </div>
+	<div class = "itemfront"> Title </div>
+	<div class = "itemfront"> Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+</div>
+</div> 
+<div class = "full" ng-show = "story1full"> 
+</div>
+<div class = "insidefull" ng-show = "story1full" ng-click = "fullclickevent()"> 
+<p>BUDAPEST - The Hungarian Army was conducting exercises near the border with Serbia on Thursday, a possible prelude to a more active role as thousands of migrants continued to pour into the country overnight.</p>
+
+<p>he involvement of the army in policing the border, where a 110-mile fence with razor wire is being constructed to keep migrants out, is subject to the approval of a bill in Parliament this month.</p>
+
+<p>The number of migrants in the area has shown no sign of abating, and Hungarian military officials have said the army would help secure the country's borders.</p>
+
+<p>The military exercises came a day after Jean-Claude Juncker, the president of the European Commission, the executive arm of the European Union, called for countries across the 28-nation bloc to set aside divisions to help migrants in a speech that softened attitudes in some quarters but fanned nationalist responses elsewhere. </p>
+
+<p>Denmark, which had temporarily closed a highway running north from the German border to try to contain migrants seeking to travel on to Sweden and other countries, said on Thursday that it would not impede their progress. Prime Minister Lars Lokke Rasmussen gave his “full support” to the police, who made the decision.</p>
+
+<p>More than 3,000 migrants crossed the border into Austria from Hungary overnight, and another 3,000 or so were expected to arrive in the area on Thursday, the police and Red Cross officials at the border said. Rail service was halted between the two countries on Thursday, Reuters reported, because Austria could not handle the huge number of migrants crossing the border. It was not clear when service would resume.</p>
+</div>  -->
+
+
+
+
+<div class = "header secondheader">
+	<h1 class = "title">Global Politics</h1>
+</div>
+
+<div class = "holderouter">
+<div class = "holderinner">
+	<div class = "itemfront"> Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+</div>
+</div>
+
+<div class = "header thirdheader">
+	<h1 class = "title">Defense</h1>
+</div>
+
+<div class = "holderouter">
+<div class = "holderinner">
+	<div class = "itemfront"> Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+	<div class = "itemfront">Title </div>
+</div>
+</div>
+
+<div class = "footer">
+	
+</div>
+
+
+<!-- <div>
+	
+	<textarea  class = "div" ng-model="paragraph1" ng-show = "input1show" type="text" placeholder="{{paragraph1}}"></textarea>
+
+	<textarea  class = "div" ng-model="paragraph2" ng-show = "input1show" type="text" placeholder="{{paragraph2}}"></textarea>
+
+	<textarea  class = "div" ng-model="paragraph3" ng-show = "input1show" type="text" placeholder="{{paragraph3}}"></textarea>
+
+	<textarea  class = "div" ng-model="paragraph4" ng-show = "input1show" type="text" placeholder="{{paragraph3}}"></textarea>
+
+	<button ng-show = "input1show" type="button" ng-click = "editclick()"> {{buttoncontent}}. </button></p>
+</div>
+
+<div>
+
+	<p class= "div" ng-show = "paragraph1show" > <h3> Name: </h3> {{paragraph1edit}}  </p>
+	<p class= "div" ng-show = "paragraph1show" > <h3> Bio: </h3> {{paragraph2edit}}  </p>
+	<p class= "div" ng-show = "paragraph2show" > <h3> Favorite Books: </h3> {{paragraph3edit}}  </p>
+	<p class= "div" ng-show = "paragraph3show" > <h3> Favorite JS Libraries: </h3> {{paragraph4edit}} <button type="button" ng-click = "editclick()"> {{buttoncontent}} </button>  </p>
+</div>	 -->
+
+
+</body>
+</html>	

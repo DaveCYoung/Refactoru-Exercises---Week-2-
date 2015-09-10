@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="exModule">
 <head>
-	<title>Hide a <form></form></title>
+	<title>Hide a form </form></title>
 	<link rel="stylesheet" type="text/css" href="6.0.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" type="text/javascript"></script>
 	<script src="6.0.js" type="text/javascript"></script>
@@ -12,6 +12,7 @@
 <div>
 	
 	<textarea  class = "div" ng-model="paragraph1" ng-show = "input1show" type="text" placeholder="{{paragraph1}}"></textarea>
+
 	<textarea  class = "div" ng-model="paragraph2" ng-show = "input1show" type="text" placeholder="{{paragraph2}}"></textarea>
 
 	<textarea  class = "div" ng-model="paragraph3" ng-show = "input1show" type="text" placeholder="{{paragraph3}}"></textarea>
@@ -23,10 +24,10 @@
 
 <div>
 
-	<p class= "div" ng-show = "paragraph1show" > <h3> Name: </h3> {{paragraph1}}  </p>
-	<p class= "div" ng-show = "paragraph1show" > <h3> Bio: </h3> {{paragraph2}}  </p>
-	<p class= "div" ng-show = "paragraph2show" > <h3> Favorite Books: </h3> {{paragraph3}}  </p>
-	<p class= "div" ng-show = "paragraph3show" > <h3> Favorite JS Libraries: </h3> {{paragraph4}} <button type="button" ng-click = "editclick()"> {{buttoncontent}} </button>  </p>
+	<p class= "div" ng-show = "paragraph1show" > <h3> Name: </h3> {{paragraph1edit}}  </p>
+	<p class= "div" ng-show = "paragraph1show" > <h3> Bio: </h3> {{paragraph2edit}}  </p>
+	<p class= "div" ng-show = "paragraph2show" > <h3> Favorite Books: </h3> {{paragraph3edit}}  </p>
+	<p class= "div" ng-show = "paragraph3show" > <h3> Favorite JS Libraries: </h3> {{paragraph4edit}} <button type="button" ng-click = "editclick()"> {{buttoncontent}} </button>  </p>
 </div>	
 
 
