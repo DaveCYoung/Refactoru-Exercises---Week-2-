@@ -46,3 +46,115 @@ keydown - moment any key goes down
 keyup - moment any key comes up
 keypress - triggers any time a typing event would produce a charcter
 
+______________________________________________________________________________________________________
+
+
+delcaring module [ ] 
+
+angular.module(app, []);
+
+setting module, dependencies go into 'injector'
+
+angular.module('app').control('trollerController', [$scope, function($scope){
+	$scope.greeting = 'hello world'
+
+}
+
+
+FILTER - ex uppercase, changes string to upper case.  
+	syntax - {{greeting | uppercase}}  or {{currency | currency : symbol(actual currency symbol used : fractionSize (number of decimal places to round to) }}  ':' = ARGUMENT 
+
+	must inject filters to use within JS.	
+
+	Can make own filters...
+
+
+
+
+currency - changes to $$ value.  
+
+creating filter syntax :
+
+angular.module('appName').filter('excite', function(){
+	
+	return function (expression, depression){  //FUNCTION MUST RETURN FUNCTION (which runs when filter is called) TO REGISTER FILTER
+
+	if (!depression) {
+		return expression.toUpperCase() + '!!!'
+	}	
+	else{
+		return expression.toLowerCase() + '... i guess';
+	}
+
+	} 
+
+})
+
+// to apply filter {{ expression | excite : boolean}}
+
+
+____________________________________________________________________________________________________________
+
+
+
+angular.module('app').controller('trollerController', ['$scope, $filter', function($scope, $filter){
+	
+	console.log($filter('excite'))  // returned function excite 
+
+	var exciter = $filter('excite'); // grabs excite filter function (defined above) and stores as 'exciter'
+
+	$scope.greeting = 'party';
+	$scope.amIDepressedd = true;
+
+	$scope.awesomeGreeting = exciter($scope.greeting);
+
+}
+])
+
+
+accessing variables from different controlers - proper syntax for declaring dependencies 
+
+factories - thinkgs/functions that can be ingested in multiple controllers
+
+	andular.module('app').factory('wonkaFactory', [function(){
+		
+		var books = [array]
+		return{
+			bookList : books,
+			otherProp: 'otherprob',
+
+			//factories don't have scope.
+			// variables can be declared but do not need $scope. 
+			// fa
+
+		}
+	}])
+
+	//INJECT in control - as dependency as string 'wonkaFactory', include in function for controller.
+
+	// set shared factories to variables
+
+	ex. $scope.books = wonkaFactory.bookList
+
+
+	side not - '$timeout' - needds to be injected into function
+
+	$timeout(function(){
+
+	}, #milliseconds)
+
+	If an item modifies a factory in any control, it will reflect across all controllers.
+
+
+	ngRepeats - can pass filters!  ex ng-repeat = "book in books | orderBy: 'author;"
+
+
+
+
+
+
+
+
+
+
+

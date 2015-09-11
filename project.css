@@ -54,7 +54,7 @@ display: inline-block;
 	display: inline-block;
 	padding: 10px;
 	padding-top: 120px;
-	background-color: gray;
+	background-color: lightgray;
 	margin:20px;
 	border-radius: 15px;
 	width: 230px;
@@ -65,6 +65,7 @@ display: inline-block;
 	background-image: url('http://static01.nyt.com/images/2015/09/11/world/11Migrants1-web/11Migrants1-web-master675.jpg');
 	font-size: 20px;
 	background-size: 230px 230px;
+	border: 3px solid black;
 }
 
 .testitemback{ 
@@ -78,9 +79,9 @@ display: inline-block;
 	font-size: 16px;
 	max-height: 230px;
 	overflow: hidden;
-	border: 5px solid black;
+	border: 3px solid black;
 }
-.itemfront{ 
+/*.itemfront{ 
 	display: inline-block;
 	padding: 100px;
 	background-color: gray;
@@ -100,8 +101,8 @@ display: inline-block;
 	font-size: 12px;
 	width: 230px;
 	height: 230px;
-	overflow: hidden;
-}
+	overflow: hidden;*/
+/*}*/
 
 
 .full{
@@ -124,8 +125,27 @@ display: inline-block;
 	margin: 0px;
 	opacity: 1;
 	position: fixed;
-	z-index: 2;
+	z-index: 3	;
 	left:15%;
 	top: 25%;
 	overflow: scroll;
+}
+
+.menu {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    background-color: black;
+    font-size: 16px;
+    line-height: 2;
+}
+.menuitem{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
 }
